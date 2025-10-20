@@ -74,54 +74,110 @@ body{
     border: none;
 }
 
-/*layanan style */
+/* layanan style */
 #our-service{
-  padding: 100px 0;   
+    padding: 100px 0;
+    width: 100%;
 }
-.col-12 h1{
-    color: #048853;
+h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--pr-color);
 }
-.container-img{
-    display:flex;
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: #048853;
-    justify-content: center;
-    align-items: center;
-}
-.card-layanan{
-    height: 300px;
-    width: 330px;
-    padding: 40px;
-    background-color:#fff;
-    border-radius: 5px;
-    margin:auto ;
-    
-    
-}
-.card-layanan h4{
-    font-size: 24;
-    font-weight: 500;
-    color:var(--pr-color);    
-}
-.card-layanan p{
+p{
+    font-size: 18px;
+    font-weight: 400;
     color: #000;
 }
-.card-layanan:hover{
+.card-layanan{
     height: 313px;
+    border-radius: 5px;
+    background-color: #fff;
     padding: 40px;
-    background: linear-gradient(160deg, var(--pr-color), #000);
+    transition: all 0.1s ease-in;
 }
-.card-layanan:hover h4{
-    font-size: 24;
+.container-img{
+    height: 70px;
+    width: 70px;
+    background-color: var(--pr-color);
+    border-radius: 50%;
+    transition: all 0.1s ease-in;
+}
+.card-layanan h4{
+    font-size: 24px;
     font-weight: 500;
-    color:#fff;    
+    color:var(--pr-color);
+    transition: all 0.1s ease-in;
 }
-.card-layanan:hover p{
- color:#fff;
+.card-layanan p{
+    font-size: 14px;
+    font-weight: 400;
+    color:#000;
+    transition: all 0.1s ease-in;
+}
+
+/* hover card */
+.card-layanan:hover{
+    background: linear-gradient(160deg, var(--pr-color), #000);
+    transition: all 0.1s ease-in;
 }
 .card-layanan:hover .container-img{
     background-color: #fff;
+    transition: all 0.1s ease-in;
 }
-/*end layanan*/
+.card-layanan:hover h4{
+    color: #fff;
+    transition: all 0.1s ease-in;
+}
+.card-layanan:hover p{
+    color: #fff;
+    transition: all 0.1s ease-in;
+}
+/* end hover card */
+/* end layanan */
+/*Style temukan rumah*/
+#temukan-rumah{
+    height: 100vh;
+    background-image: url(image/Interior.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  
+}
+.tmk-rumah{
+ color: #fff;
+ font-size: 48px;
+ font-weight: 500;
+  padding-top: 110px;
+}
+.sub-tmk-rumah{
+color: #fff;
+font-weight: 400;
+
+}
+.btn-tab{
+    height: 42px;
+    color:#000;
+    background-color: rgb(255,255,255,0.5);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.jual{
+    border-radius: 10px 0 0 0;
+}
+.properti{
+    border-radius: 0 10px 0 0;
+}
+.btn-tab.active{
+    height: 42px;
+    color:var(--pr-color);
+    background-color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease-in;
+}
+/*End Style temukan rumah*/
