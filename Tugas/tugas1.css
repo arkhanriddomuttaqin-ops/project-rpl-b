@@ -15,6 +15,7 @@ padding: 20px;
 .hero-img{
     width: 416px;
     height: 494px;
+    object-fit: cover;
 }
 .tulisan{
     font-weight: bold;
@@ -30,10 +31,6 @@ span{
 .tulis{
        font-size: 20px;
 }
-.card img{
-   justify-content: center;
-   align-items: center;
-}
 .col-md-3{
   flex: 1;
   height: 284px;      
@@ -43,4 +40,8 @@ span{
 .row {
   column-gap: 25px;   
   row-gap: 0px;       
+}
+.bibi{
+  width: 582px;
+  height: 408px;
 }
